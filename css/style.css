@@ -161,6 +161,11 @@ nav{
     right: 20px;
 }
 
+.card{
+    box-shadow: 1px 2px 6px #b7b6b66a;
+
+}
+
 .card-title{
     font-size: 0.9rem;
     font-weight: bold;
