@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+:root{
+    --colorofondo1 : #f2f2fd;
+    --colorfondo2: #504c7c;
+    --coloroletras: #393669;
+    --colorboton: #7570c3;
+}
 
+
+/* Ajustes generales */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -17,22 +25,32 @@ body{
 .imagen-logo{
     width: 150px;
 }
+footer{
+    background: #6b62a7;
+    text-align: center;
+    color: aliceblue;
 
+    /* VEEEEEERRR */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+/* Ajustes paginas */
 .container-fluid{
     display: flex;
     justify-content: space-between;
 }
 
 nav{
-    box-shadow: 1px 1px 1px #c5c5c56a;
+    box-shadow: 1px 1px 1px #b7b6b66a;
 
 }
 
-
-/* .nav-item a:hover{
-    background: #6b62a7;
-    color: aliceblue;
-} */
 
 #inicio{
     width: 100%;
@@ -41,7 +59,7 @@ nav{
     align-items: center;
     text-align: center;
     padding: 30px;
-    background: aliceblue;
+    background: var(--colorofondo1);
     min-height: 100vh;
 
 }
@@ -77,24 +95,113 @@ nav{
 .inicio-textos a{
     color: aliceblue;
     text-decoration: none;
-    background: #8d83d2;
+    background: var(--colorboton);
     padding: 5px 20px;
     border-radius:50px;
 }
 
 
 
-footer{
-    background: #6b62a7;
-    text-align: center;
-    color: aliceblue;
+/* seccion cursos */
 
-    /* VEEEEEERRR */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.cursos{
+    min-height: 100vh;
+    position: relative;
+    padding: 0 10px;
+    background: var(--colorofondo1);
+
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+.textos-cursos{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.textos-cursos a{
+    color: #333;
+    text-decoration: none;
+    font-size: 0.5rem;
+}
+
+.textos-cursos a:hover{
+    color: var(--colorboton);
+    font-size: 0.7rem;
+}
+
+.textos-cursos span{
+    font-size: 0.7rem;
+}
+
+.textos-cursos h1{
+    font-weight: 900;
+    color: var(--coloroletras);
+}
+
+.cards-cursos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards-cursos img{
+    width: 300px;
+}
+
+.img-2cursos{
+    position: absolute;
+    bottom: -5px;
+    right: 20px;
+}
+
+.card-title{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+
+.precio{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--coloroletras);
+    margin-bottom: 2px;
+}
+
+#btn-card{
+    border: 1px solid #333;    font-size: .8rem;
+    font-size: .8rem;
+
+
+}
+
+#btn-card:hover{
+    background: var(--colorboton);
+    color:#ffffff;
+}
+
+
+#btn-comprar{
+    background: var(--colorfondo2);
+    color: #f2f2fd;
+    font-size: .8rem;
+}
+
+#btn-comprar:hover{
+    background: var(--colorboton);
+}
+
+/* keyframes */
 @keyframes parpadear {
     0%{
         transform: scale(0);
