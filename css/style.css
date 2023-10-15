@@ -118,7 +118,7 @@ nav{
     gap: 10px;
     padding: 20px;
 }
-.textos-cursos , .titulos-sobrenosotros{
+.textos-cursos , .titulos-sobrenosotros, .titulos-contacto{
     display: flex;
     justify-content: center;
     align-items:start;
@@ -134,7 +134,7 @@ nav{
     font-size: 0.5rem;
 }
 
-.textos-cursos a:hover, .titulos-sobrenosotros a:hover{, 
+.textos-cursos a:hover, .titulos-sobrenosotros a:hover{ 
     color: var(--colorboton);
     font-size: 0.7rem;
 }
@@ -143,7 +143,7 @@ nav{
     font-size: 0.7rem;
 }
 
-.textos-cursos h1,.titulos-sobrenosotros h1{
+.textos-cursos h1, .titulos-sobrenosotros h1{
     font-weight: 900;
     color: var(--coloroletras);
 }
@@ -230,6 +230,36 @@ nav{
 .texto-img-nosotros p{
     width: 50%;
     text-align: end;
+}
+
+
+/* seccion contacto */
+
+.contacto{
+    background: var(--colorfondo2);
+    min-height: 100vh;
+}
+
+.titulos-contacto a{
+    color: var(--colorofondo1);
+    text-decoration: none;
+    font-size: 0.5rem;
+}
+
+.titulos-contacto a:hover{
+    color: var(--colorboton);
+    font-size: 0.7rem;
+}
+
+.titulos-contacto span{
+    font-size: 0.7rem;
+    color: white;
+    font-weight: bold;
+}
+
+.titulos-contacto h1{
+    font-weight: 1000;
+    color: var(--colorofondo1);
 }
 
 
