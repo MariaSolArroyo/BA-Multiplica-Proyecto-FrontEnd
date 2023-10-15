@@ -238,6 +238,8 @@ nav{
 .contacto{
     background: var(--colorfondo2);
     min-height: 100vh;
+    position: relative;
+    
 }
 
 .titulos-contacto a{
@@ -262,6 +264,68 @@ nav{
     color: var(--colorofondo1);
 }
 
+.texto-img-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-img-contacto .img1-contacto{
+    width: 350px;
+}
+
+.img1-contacto{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.img2-contacto{
+    padding-bottom: 30px;
+    position: absolute;
+    right: 70px;
+    width: 250px;
+}
+
+input,label,textarea{
+    width: 100%;
+}
+
+label{
+    color: #f2f2fd;
+    font-size: 1rem;
+}
+
+input{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+textarea{
+    margin-top: 10px;
+    text-align:start;
+    padding: 15px;
+}
+
+::placeholder{
+    font-size: .8rem;
+    color: rgba(128, 128, 128, 0.514);
+}
+
+#btn-enviar{
+    width: 35%;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.redes-sociales-contacto i{
+    color: #f2f2fd;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
 
 
 /* keyframes */
