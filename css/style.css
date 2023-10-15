@@ -118,30 +118,32 @@ nav{
     gap: 10px;
     padding: 20px;
 }
-.textos-cursos{
+.textos-cursos , .titulos-sobrenosotros{
     display: flex;
     justify-content: center;
     align-items:start;
     flex-direction: column;
     padding: 30px;
+    animation-name: moverderecha;
+    animation-duration: 2s;
 }
 
-.textos-cursos a{
+.textos-cursos a, .titulos-sobrenosotros a{
     color: #333;
     text-decoration: none;
     font-size: 0.5rem;
 }
 
-.textos-cursos a:hover{
+.textos-cursos a:hover, .titulos-sobrenosotros a:hover{, 
     color: var(--colorboton);
     font-size: 0.7rem;
 }
 
-.textos-cursos span{
+.textos-cursos span,.titulos-sobrenosotros span{
     font-size: 0.7rem;
 }
 
-.textos-cursos h1{
+.textos-cursos h1,.titulos-sobrenosotros h1{
     font-weight: 900;
     color: var(--coloroletras);
 }
@@ -206,6 +208,32 @@ nav{
     background: var(--colorboton);
 }
 
+
+
+/* seccion sobre nosotros */
+.sobre-nosotros{
+    min-height: 100vh;
+    background: var(--colorofondo1);
+}
+
+.texto-img-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texto-img-nosotros img{
+    width: 400px;
+}
+
+.texto-img-nosotros p{
+    width: 50%;
+    text-align: end;
+}
+
+
+
 /* keyframes */
 @keyframes parpadear {
     0%{
@@ -230,5 +258,16 @@ nav{
 
     100%{
         transform: scale(.5);
+    }
+}
+
+@keyframes moverderecha {
+    0%{
+        transform: translateX(100px);
+    }
+    
+    
+    100%{
+        transform: translateX(0px);
     }
 }
