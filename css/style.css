@@ -365,3 +365,91 @@ textarea{
         transform: translateX(0px);
     }
 }
+
+
+/* media */
+
+@media screen and (max-width: 1024px) {
+
+    .inicio{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 100px;
+       
+    }
+    
+    .inicio-textos{
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .inicio-textos p{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    .cards{
+    
+        grid-template-columns: 1fr  1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cursos{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-1cursos,.img-2cursos{
+        display: none;
+    }
+
+    .cards-cursos{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .texto-img-nosotros{
+        flex-direction: column;
+    }
+    .texto-img-nosotros img{
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .texto-img-nosotros p{
+        text-align: center;
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    
+
+    .img1-contacto{
+        display: none;
+    }
+
+    .img2-contacto{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .cursos{
+        padding-bottom: 50px;
+    }
+    .cards{
+    
+        grid-template-columns: 1fr;
+    }
+
+    .img-1cursos,.img-2cursos{
+        display: none;
+    }
+    .img2-contacto{
+        display: none;
+    }
+    
+}
