@@ -51,7 +51,10 @@ nav{
 
 }
 
-
+.nav-item{
+    animation-name: caida;
+    animation-duration: 1s;
+}
 #inicio{
     width: 100%;
     display: flex;
@@ -327,6 +330,10 @@ textarea{
     margin-bottom: 25px;
 }
 
+.movimiento{
+    animation-name: parpadear;
+    animation-duration: 1s;
+}
 
 /* keyframes */
 @keyframes parpadear {
@@ -366,6 +373,15 @@ textarea{
     }
 }
 
+@keyframes caida {
+    0%{
+        transform: translateY(-100px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+}
 
 /* media */
 
