@@ -229,6 +229,14 @@ nav{
     background: var(--colorboton);
 }
 
+.botones-card{
+    bottom: 0;
+}
+
+.card-img-top{
+    width: 100px;
+    height: 120px;
+}
 
 
 /* seccion sobre nosotros */
@@ -241,6 +249,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -258,7 +267,7 @@ nav{
 
 .contacto{
     background: var(--colorfondo2);
-    min-height: 100vh;
+    min-height: 130vh;
     position: relative;
     
 }
