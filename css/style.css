@@ -26,14 +26,20 @@ body{
     width: 150px;
 }
 footer{
-    background: #6b62a7;
+    background: var(--colorofondo1);
     text-align: center;
-    color: aliceblue;
+    color: #333;
+    padding: 20px;
 
     /* VEEEEEERRR */
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.footer-var{
+    background: var(--coloroletras);
+    color: var(--colorofondo1);
 }
 
 
@@ -54,7 +60,19 @@ nav{
 .nav-item{
     animation-name: caida;
     animation-duration: 1s;
+    padding-left: 20px;
 }
+
+.nav-item:hover{
+    transform: scale(1.2);
+ 
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid var(--coloroletras);
+}
+
+
 #inicio{
     width: 100%;
     display: flex;
@@ -108,7 +126,7 @@ nav{
 /* seccion cursos */
 
 .cursos{
-    min-height: 100vh;
+    min-height: 120vh;
     position: relative;
     padding: 0 10px;
     background: var(--colorofondo1);
@@ -286,8 +304,8 @@ nav{
 .img2-contacto{
     padding-bottom: 30px;
     position: absolute;
-    right: 70px;
-    width: 250px;
+    right: 350px;
+    width: 100px;
 }
 
 input,label,textarea{
@@ -447,8 +465,8 @@ textarea{
         display: none;
     }
 
-    .img2-contacto{
-        width: 100px;
+    .img2-contacto iframe{
+        display: none;
     }
 }
 
