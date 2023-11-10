@@ -126,7 +126,7 @@ nav{
 /* seccion cursos */
 
 .cursos{
-    min-height: 120vh;
+    min-height: 140vh;
     position: relative;
     padding: 0 10px;
     background: var(--colorofondo1);
