@@ -1,129 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/ac0f779175.js" crossorigin="anonymous"></script>
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 
-    <title>Frontend Mentor | Recipe page</title>
-    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <img src="./assets/images/image-omelette.jpeg" alt="" />
+          <header id="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg- d-flex justify-content-around align-items-center">
+                    <li class="nav-item">
+                      <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.png" class="img-fluid imagen-logo" alt="imagen de logo la portuaria">
+                      </a>
+                    </li>
+    
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./html/cursos.html">CURSOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./html/sobrenosotros.html">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./html/contacto.html">CONTACTO</a>
+                    </li>
+  
+                  </ul>
+                 
+                </div>
+              </div>
+            </nav>
+          </header>
 
-      <h1>Simple Omelette Recipe</h1>
-      <p class="p-principal">
-        An easy and quick dish, perfect for any meal. This classic omelette
-        combines beaten eggs cooked to perfection, optionally filled with your
-        choice of cheese, vegetables, or meats.
-      </p>
+          <section class="inicio" id="inicio">
+            <div class="inicio-textos">
+              <h6 class="inicio-textos-h6">ESTUDIA SIN LIMITES</h6>
+              <h1>CURSOS ONLINE</h1>
+              <p>¿No sabes qué estudiar? Descubre tu nueva carrera y conoce La comunidad de aprendizaje en línea donde desarrollas tus habilidades y potencias tu crecimiento profesional.</p>
+              <a href="./html/cursos.html" id="elegir-curso">ELEGÍ TU CURSO</a>
+            </div>
+            <div class="inicio-imagen">
+              <img src="./img/imageninicio.png" class="img-fluid" alt="">
+            </div>
+          </section>
 
-      <div class="preparation">
-        <p><strong>Preparation time</strong></p>
-        <ul>
-          <li>Total: Approximately 10 minutes</li>
-          <li>Preparation: 5 minutes</li>
-          <li>Cooking: 5 minutes</li>
-        </ul>
-      </div>
+    <footer class="footer-var">
+       © María Sol Arroyo - 2023
+    </footer>
 
-      <div class="ingredients">
-        <h2>Ingredients</h2>
-          <ul>
-            <li>2-3 large eggs</li>
-            <li>Salt, to taste</li>
-            <li>Pepper, to taste</li>
-            <li>1 tablespoon of
-              butter or oil</li>
-            <li>Optional fillings: cheese, diced vegetables, cooked meats,
-              herbs</li>
-          </ul>
-             
-      </div>
-
-      <div class="instructions">
-        <h2>Instructions</h2> 
-        <ol>
-          <li> <span>1.</span><span class="span-nutri"> Beat the eggs: </span> In a bowl, beat the eggs with a pinch of
-            salt and pepper until they are well mixed. You can add a tablespoon of
-            water or milk for a fluffier texture. </li>
-          <li><span>2.</span><span class="span-nutri"> Heat the pan:</span>  Place a non-stick
-            frying pan over medium heat and add butter or oil. </li>
-          <li><span>3. </span><span class="span-nutri">Cook the omelette:</span>  Once
-            the butter is melted and bubbling, pour in the eggs. Tilt the pan to
-            ensure the eggs evenly coat the surface. </li>
-          <li> 
-            <span>4. </span><span class="span-nutri">Add fillings (optional):</span>  When the
-            eggs begin to set at the edges but are still slightly runny in the middle,
-            sprinkle your chosen fillings over one half of the omelette. </li>
-          <li><span>5. </span><span class="span-nutri">Fold and
-            serve:</span>  As the omelette continues to cook, carefully lift one edge and fold
-            it over the fillings. Let it cook for another minute, then slide it onto a
-            plate. </li>
-          <li><span>6. </span><span class="span-nutri">Enjoy:</span>  Serve hot, with additional salt and pepper if needed.</li>
-        </ol>
-       
-      
-      
-      
-     
-     
-      
-     
-      
-      
-      </div>
-
-      <div class="nutrition">
-        <h2>Nutrition</h2> 
-        <p>
-          The table below shows nutritional values per serving without the
-        additional fillings.
-        </p>
-
-        <div class="data-container">
-            <p>Calories</p>
-            <p class="data-bold">277kcal</p>
-            <p>Carbs</p>
-          <p class="data-bold">0g</p>
-          <p>Protein</p>
-          <p class="data-bold">20g</p>
-          <p>Fat</p>
-          <p class="data-bold">22g</p>
-        </div>
-      </div>
-
-     
-      
-      
-
-      
-    </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Maria Sol Arroyo</a>.
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./scripts/script.js"></script>
   </body>
 </html>
